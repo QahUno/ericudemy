@@ -1,5 +1,5 @@
 import express from 'express'
-import configApp from './config/index.js'
+import configApp from './config/app/index.js'
 import routing from './routes/index.js'
 
 const app = express()
