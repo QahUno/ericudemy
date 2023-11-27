@@ -1,9 +1,11 @@
 import express from 'express'
-import configApp from './config/app/index.js'
-import routing from './routes/index.js'
+import configApp from './config/app'
+import routing from './routes'
+import db from './config/db'
 
 const app = express()
 
+db.connect()
 configApp(app)
 routing(app)
 
